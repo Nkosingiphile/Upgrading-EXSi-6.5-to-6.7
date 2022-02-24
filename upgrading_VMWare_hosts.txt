@@ -16,3 +16,6 @@ if getting error:
 
 10. Run the upgrade:
    esxcli software vib update -d /vmfs/volumes/DATASTORE/VMware-ESXi-6.7.0-8169922-depot.zip
+
+
+11.patching host
