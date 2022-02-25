@@ -12,10 +12,18 @@ Steps to upgrade ESXi host offline:
 9. Run the upgrade:
    esxcli software profile update -d /vmfs/volumes/DATASTORE/VMware-VMvisor-Installer-6.7.0.update03-17167734.x86_64-DellEMC_Customized-A08.zip -p <profile name>
    
-if getting error:
+if getting error: use comand: esxcli software vib update -d /vmfs/volumes/DATASTORE/VMware-ESXi-6.7.0-8169922-depot.zip
 
-10. Run the upgrade:
-   esxcli software vib update -d /vmfs/volumes/DATASTORE/VMware-ESXi-6.7.0-8169922-depot.zip
+----------------------------------------------------------------------------------------- patching host ESXI host-------------------------------------------------------------
+
+11.patching ESXI host via cli: refere to screenshort patching host
+ -download offline patch  zip file from  vmware
+ -uplod the file to vmware datastore
+ -take VM snap shorts on the host(optional)
+ -power off VM's
+ -place host on maintanace mode
+ -make sure ssh is  enabled on host
+ -ssh to the host
+ 
 
 
-11.patching host
